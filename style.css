@@ -104,6 +104,8 @@
     background-color: lightgray;
 }
 
+
+
 .btn {
     background-color: #5EB948;
     color: var(--tertiary);
@@ -119,5 +121,28 @@
     opacity: 1;
 }
 
+@media(max-width: 450px) {
+    #desc-form {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
 
+    #desc {
+        padding: 2em;
+    }
+
+    #desc h2 {
+        margin-bottom: .5em;
+    }
+
+    #subs-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    #subs-form p {
+        font-size: 1.4em;
+    }
+}
 
