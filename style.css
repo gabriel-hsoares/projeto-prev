@@ -28,7 +28,7 @@
 
 #desc-form {
     height: 89vh;
-    width: 100vw;
+    width: 98.9vw;
     background-color: #002855;
     display: flex;
     justify-content: space-around;
@@ -91,6 +91,10 @@
     margin-bottom: .8em;
 }
 
+#termos {
+    margin: 15px 0;
+}
+
 #form-group label{
     margin-bottom: .3em;
     font-weight: bold;
@@ -104,7 +108,32 @@
     background-color: lightgray;
 }
 
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+    color: var(--tertiary);
+}
 
+.product-text {
+    padding: 1.6em;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-weight: 500;
+    font-size: .7em;
+    color: white;
+    text-decoration: none;
+}
+
+#social > a{
+    font-size: 24px;
+    padding: .2em;
+    width: 2%;
+    color: white;
+    margin: auto;
+}
 
 .btn {
     background-color: #5EB948;
@@ -117,32 +146,176 @@
     opacity: .8;
 }
 
+#termos  a {
+    color: #002855;
+    text-decoration: none;
+}
+
 .btn:hover {
     opacity: 1;
 }
 
-@media(max-width: 450px) {
+#key-benefits h2 {
+    background-color: var(--quart);
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+    color: var(--tertiary);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#key-benefits-2 h2 {
+    background-color: var(--quart);
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+    color: var(--tertiary);
+    text-transform: uppercase;
+}
+/* #video{
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}  */
+#video-describe{
+    max-width: 90%;
+    text-align: justify;
+    padding: 2em;
+}
+#video-benefits{
+    background-color: #25d366;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 50%;
+    margin: 0;
+}
+
+#video-benefits > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    width: 80%;
+    margin: 25px auto;
+}
+
+.benefit {
+    text-align: center;
+    display: flex;
+    margin: 0 15px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--secondary);
+    font-size: 1em;
+}
+
+.benefit .benefit-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+.zap a {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:20px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+#benefit-1 {
+    background-image: url('img/ben-fiscal.jpg');
+}
+#benefit-2 {
+    background-image: url('img/fundos.jpg');
+}
+#benefit-3 {
+    background-image: url('img/prev.jpg');
+}
+#benefit-4 {
+    background-image: url('img/come-cotas.jpg');
+}
+#benefit-5 {
+    background-image: url('img/renda.png');
+}
+
+@media (max-width: 460px) {
+    /*EVENT FORM*/
     #desc-form {
         flex-direction: column;
         height: auto;
         width: auto;
     }
-
     #desc {
         padding: 2em;
     }
-
     #desc h2 {
         margin-bottom: .5em;
     }
-
     #subs-form {
         max-width: 70%;
         margin-bottom: 2em;
     }
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+    .benefit{
+        max-width: 100%;
+        margin: 2em;
+    }
+    .zap a {
+        bottom: 20px;
+        right: 10px;
+    }
+    /* #video {
+        flex-direction: column;
+        width: 97%;
+        margin: 0 auto;
+        justify-content: center;
+    } */
+    #video-describe {
+        max-width: 100%;
+        text-align: justify;
+        margin-left: 0;
+    }
+    footer {
+        width: auto;
+        height: auto;
+    }
 
-    #subs-form p {
-        font-size: 1.4em;
+    .product-text {
+        color: white;
+        text-decoration: none;
+        padding: .8em;
+        width: 90%;
+    }
+    .product-text a {
+        color: white;
+        text-decoration: none;
     }
 }
 

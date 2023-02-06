@@ -18,11 +18,11 @@
             <h2>Pague menos imposto e invista seu dinheiro.</h2>
             <p class="quest">Já imaginou deduzir em até 12% sua base de cálculo do IR?</p>
             <p class="how">Isso é possível com a Previdência Privada!</p>
-            <p class="down">Faça o download agora mesmo do E-book que preparamos de forma <strong>100% gratuita</strong> pra você!</p>
+            <p class="down">Faça seu cadastro e receba uma mensagem de um de nossos especialistas!</p>
         </div>
         <div id="subs-form">
             <p>Digite seu nome e e-mail e receba <strong>agora mesmo</strong> nosso e-book</p>
-            <form action="" autocomplete="off">
+            <form action="envia_fale.php" autocomplete="off">
                 <div id="form-group">
                     <label for="inome">Nome*</label>
                     <input type="text" name="nome" id="inome" required placeholder="Digite seu nome" minlength="5" maxlength="30">
@@ -31,9 +31,73 @@
                     <label for="imail">E-mail*</label>
                     <input type="email" name="email" id="imail" required placeholder="Digite seu e-mail">
                 </div>
-                <input type="submit" value="Receber e-book" class="btn">
+                <div id="form-group">
+                    <label for="itel">Telefone*</label>
+                    <input type="tel" name="tel" id="itel" required placeholder="(XX) X XXXX-XXXX" required>
+                </div>
+                <div id="termos">
+                    <input type="checkbox" name="termos" id="itermos" required>
+                    <label for="itermos">Li e aceito os <a href="https://beneficiumseguros.com.br/politica-de-privacidade/"><strong>termos de uso e privacidade</strong></a>.*</label>
+                </div>
+                <input type="submit" value="Quero fazer uma previdência" class="btn">
             </form>
         </div>
     </header>
+    <section id="key-benefits">
+        <h2>Por que fazer uma Previdência Privada?</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <div id="benefit-1" class="benefit-img"></div>
+                <p>Benefício Fiscal no seu Imposto de Renda.</p>
+            </div>
+            <div class="benefit">
+                <div id="benefit-2" class="benefit-img"></div>
+                <p>Mais de 100 opções de fundos para rentabilizar sua reserva.</p>
+            </div>
+            <div class="benefit">
+                <div id="benefit-3" class="benefit-img"></div>
+                <p>Evolução de patrimônio.</p>
+            </div>
+            <div class="benefit">
+                <div id="benefit-4" class="benefit-img"></div>
+                <p><strong>NÃO</strong> possui <strong>come-cotas</strong>.</p>
+            </div>
+            <div class="benefit">
+                <div id="benefit-5" class="benefit-img"></div>
+                <p>Transforme sua reserva em renda vitalícia.</p>
+            </div>
+        </div>
+    </section>
+    <div class="zap">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=5585997046040&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Telemedicina!" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>
+    </div>
+    <div id="key-benefits-2">
+        <h2>
+            Ouça o especialista
+        </h2>
+    </div>
+    <div id="video">
+        <div id="video-benefits">
+            <iframe src="https://www.youtube.com/embed/dLqRCHwoGoc" id="vidio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="video-describe">
+            <p>Muitas das vezes as pessoas pensam que só podem construir um patrimônio quando tiverem um salário de R$ 50 mil por mês, mas estão todas enganadas! É possível construir um patrimônio - no longo prazo - com investimentos de R$ 100 por mês! A falta de paciência, disciplina e resiliência levam as pessoas a duvidarem da capacidade dos juros compostos, o que os leva muitas vezes a entrarem em investimentos mais arriscados e colocar em jogo todo seu patrimônio até o momento. Que tal um investimento mais seguro, com rentabilidade acima da média do mercado e contando com um Incentivo Fiscal? <strong>É possível na Previdência Privada!</strong></p>
+        </div>
+    </div>
+    <footer>
+        <div class="product-text">
+            <p>
+                &copy Todos os direitos reservados | Beneficium Seguros
+            </p>
+            <p>CNPJ: 37.962.949/0001-82</p>
+        </div>
+        <div id="social">
+            <a href="https://instagram.com/beneficiumseguros" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://facebook.com/beneficiumseguros" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
